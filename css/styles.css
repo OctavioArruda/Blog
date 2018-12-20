@@ -1,105 +1,43 @@
-/* border color: #bdc3c7
-date color: #3498db
-h2 color: #2c3e50
-font: source sans pro */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-/* 
-body{
-    background-image: url("bg.jpg");
-}  */
-
-main{
-    border: 20px solid #bdc3c7;
-    font-family: Source Sans Pro;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding-left: 75px;
-    padding-right: 75px;
-    background-color: #fefefe;
+body {
+    
 }
 
-h1{
-    color: #2c3e50;
-    padding-bottom: 50px;
+.main-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    /* text-shadow: 0px 4px 3px rgba(0, 0, 0 ,0.1),
+                0px 8px 13px rgba(0, 0, 0 ,0.1),
+                0px 18px 23px rgba(0, 0, 0 ,0.1); */
 }
 
-h3 {
-    /* date color */
-    color: #3498db;
-    text-transform: uppercase;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    margin-top: 25px;
-}
-
-p{
-    text-align: justify;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.sideborder{
-    border-left: 5px solid #bdc3c7;
-    padding-left: 2.5px;
-}
-
-div{
-    border-bottom: 1.5px solid #e2e5e7;
-    padding-bottom: 10px;
-}
-
-.menu {
-    float: left;
-    padding: 10px;
-}
-
-a{
-    padding-right: 50px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+.main-text{
+    font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
+    /* text-shadow: 0px 4px 3px rgba(68, 68, 68,0.1),
+                0px 8px 13px rgba(68, 68, 68,0.1),
+                0px 18px 23px rgba(68, 68, 68,0.1); */
 }
 
-a:visited{
-    color: black;
+.highlight{
+    color: rgba(237, 136, 14, 0.9);
+    font-weight: 800;
 }
 
-a:hover{
-    color: #000083;
+/* Nav */
+/* Aqui no caso tem duas opções, se tu deixar o sticky-top, vai passar do ATF o teu hero */
+/* O fixed tira o elemento do fluxo padrão e deixa ele vinculado ao html */
+#main-nav {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: 400;
+    /* letter-spacing: 0.1rem;  */
 }
 
-input{
-    display: block;
-    margin-bottom: 10px;
-    border: 1.5px solid #bdc3c7;
-    padding: 10px;
-}
-
-textarea{
-    border: 1.5px solid #bdc3c7;
-}
-
-#form-div{
-    margin-top: 50px;
-}
-
-button{
-    border: 2px solid #bdc3c7;
-    background-color: #bdc3c7;
-    border-radius: 10%;
-    font-size: 25px;
-    display: block;
-    font-weight: 100;
-}
-
-button:hover {
-    border: 2px solid #e2e5e7;
-    background-color: #e2e5e7;
-    border-radius: 10%;
-    font-size: 25px;
+/* Hero */
+#hero {
+    background: url("../bg_main_darkfiltered.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
