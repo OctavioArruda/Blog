@@ -23,16 +23,17 @@
 /* Aqui no caso tem duas opções, se tu deixar o sticky-top, vai passar do ATF o teu hero */
 /* O fixed tira o elemento do fluxo padrão e deixa ele vinculado ao html */
 #main-nav {
+    font-family: 'Montserrat', sans-serif;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     font-weight: 400;
     z-index: 1;
-    /* letter-spacing: 0.1rem;  */
+    letter-spacing: 0.1rem;  
 }
 
-#about-me {
+#exps {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
@@ -41,6 +42,17 @@
     background: url("../bg_main_darkfiltered.png") no-repeat;
     background-size: cover;
     min-height: 100vh;
+}
+
+#about-me {
+    background-color: #212529;
+    color: white;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.about-me-title{
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Responsive layout: */
