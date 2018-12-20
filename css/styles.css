@@ -1,7 +1,3 @@
-body {
-    
-}
-
 .main-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -32,6 +28,7 @@ body {
     top: 0;
     width: 100%;
     font-weight: 400;
+    z-index: 1;
     /* letter-spacing: 0.1rem;  */
 }
 
@@ -44,4 +41,24 @@ body {
     background: url("../bg_main_darkfiltered.png") no-repeat;
     background-size: cover;
     min-height: 100vh;
+}
+
+/* Responsive layout: */
+
+@media (max-width: 1200px){
+    #hero {
+        padding: 0.2rem;
+    }
+    #hero h1 {
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+    #hero p {
+        font-weight: 100;
+        font-size: 1rem;
+    }
+
+    #about-me {
+        padding: 0.2rem;
+    }
 }
