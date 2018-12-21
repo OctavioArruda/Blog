@@ -64,6 +64,9 @@ section {
     #exps .experience-list {
         margin: 4rem 0 8rem;
     }
+        #exps .experience-list > .col-10 {
+            display: flex;
+        }
 
     #exps .skills-table {
         margin-top: 4rem;
