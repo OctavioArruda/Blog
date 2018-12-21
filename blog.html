@@ -53,15 +53,15 @@
     </nav>
 
     <!-- 
-            Como dá pra ver inspecionando, o container serve pra limitar um tamanho máximo de largura
-            e centralizar um conteúdo, como tu quer que a tua div tenha 100% de largura, tu não quer
-            que ela seja englobada por um container, mas provavelmente que tenha um dentro (ou não)
-         -->
+        Como dá pra ver inspecionando, o container serve pra limitar um tamanho máximo de largura
+        e centralizar um conteúdo, como tu quer que a tua div tenha 100% de largura, tu não quer
+        que ela seja englobada por um container, mas provavelmente que tenha um dentro (ou não)
+    -->
     <section id="hero" class="d-flex flex-column justify-content-center">
-        <h1 class="text-white text-center mt-5 main-title display-1">
+        <h1 class="text-white text-center main-title">
             Hello, I'm <span class="highlight">Octavio</span>
         </h1>
-        <p class="text-white text-center main-text display-4">
+        <p class="text-white text-center main-text">
             A creative
             <span class="highlight">front-end developer</span> based in
             Porto Alegre.
@@ -72,19 +72,15 @@
 
     <!-- SECOND SCREEN START -->
     <section id="exps" data-aos="fade-right">
-        <div class="container pt-5">
-            <div class="d-flex flex-row align-items-center justify-content-center mt-5">
-                <div class="p-2">
-                    <h1 class="display-5 main-text">Education and<br> Experience.</h1>
-                    <p class="main-text">This are my academic achievements and field experience. <br>Cras ut nisl
-                        consectetur,
-                        lacinia nisl at,
-                        malesuada mauris.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-sm-4 col-12 p-5">
-                    <div class="card text-white bg-dark" style="max-width: 18rem;">
+        <div class="container">
+            <h1 class="title text-center">Education and Experience</h1>
+            <p class="subtitle text-center">
+                This are my academic achievements and field experience. Cras ut nisl consectetur, lacinia nisl at, malesuada mauris.
+            </p>
+
+            <div class="row experience-list">
+                <div class="col-10 col-md-4">
+                    <div class="card text-white bg-dark">
                         <div class="card-header">College</div>
                         <div class="card-body">
                             <h5 class="card-title">UFRGS</h5>
@@ -92,8 +88,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-sm-4 col-12 p-5">
-                    <div class="card text-white bg-dark" style="max-width: 18rem;">
+                <div class="col-10 col-md-4">
+                    <div class="card text-white bg-dark">
                         <div class="card-header">Internship</div>
                         <div class="card-body">
                             <h5 class="card-title">FGTAS</h5>
@@ -101,8 +97,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-sm-4 col-12 p-5">
-                    <div class="card text-white bg-dark" style="max-width: 18rem;">
+                <div class="col-10 col-md-4">
+                    <div class="card text-white bg-dark">
                         <div class="card-header">Internship</div>
                         <div class="card-body">
                             <h5 class="card-title">Dableo</h5>
@@ -111,92 +107,94 @@
                     </div>
                 </div>
             </div>
+
             <!-- SKILLS SECTION -->
-            <div class="container">
-                <div class="row mt-1">
-                    <div class="col text-center">
-                        <h1 class="display-4">My Skills</h1>
-                    </div>
+            <h1 class="title text-center">My Skills</h1>
+            <p class="subtitle text-center">
+                This are my academic achievements and field experience.
+            </p>
+
+            <div class="skills-table border border-dark">
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 94%"></div>
                 </div>
-                <div class="container">
-                    <div class="row m-5 p-2 border border-dark">
-                        <div class="col pt-3 pb-3">
-                            <p>HTML</p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 94%"></div>
-                            </div>
-                            <p>CSS</p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                            <p>JavaScript</p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
-                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                            </div>
-                            <p>Bootstrap</p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
-                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
+
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+                
+                <p>Bootstrap</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- SECOND SCREEN END -->
 
     <!-- THIRD SCREEN START -->
     <section id="about-me">
         <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-6" data-aos="fade-down-right">
-                    <h1 class="about-me-title mb-5">A story about me.</h1>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 content" data-aos="fade-down-right">
+                    <h1 class="title white">A story about me</h1>
 
-                    <p class="main-text text-justify">I'm Octavio Arruda and I'm a Web Developer. Lorem Ipsum is simply
-                        dummy text of
-                        the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy
-                        text ever since the <br>1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book.</p>
-                    <!-- <div class="col-12 col-md-6 justify-content-between align-items-center"> -->
-                    <div class="row main-text">
-                        <div class="col">
+                    <p class="subtitle white text-justify">
+                        I'm Octavio Arruda and I'm a Web Developer. Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to make a type specimen book.
+                    </p>
+
+                    <div class="row list">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Sports
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Lifting
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Books
                         </div>
                     </div>
-                    <div class="row main-text">
-                        <div class="col">
+
+                    <div class="row list">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Computer Science
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Artificial Intelligence
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Web Development
                         </div>
                     </div>
-                    <div class="row main-text">
-                        <div class="col">
+
+                    <div class="row list">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Active
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Responsive
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-sm-4">
                             <i class="fas fa-angle-double-right highlight"></i> Enthusiastic
                         </div>
                     </div>
                     <!-- </div> -->
                 </div>
-                <div class="col-12 col-md-6" data-aos="fade-up-left">
+                <div class="col-12 col-md-5 profile-pic" data-aos="fade-up-left">
                     <img src="profilepic.jpg" alt="me" class="rounded-circle img-fluid img-responsive">
                 </div>
             </div>
@@ -207,22 +205,21 @@
 
     <!-- FORTH SCREEN START  -->
     <section id="contact-me">
-        <div class="container mt-5">
-            <div>
-                <h1 class="display-4 main-text text-center">SAY HELLO!</h1>
-                <div class="row mt-5">
-                    <div class="col-12 col-sm-4 text-center">
-                        <i class="fas fa-map-marked display-4 pb-3"></i>
-                        <p class="main-text">Porto Alegre, Brazil</p>
-                    </div>
-                    <div class="col-12 col-sm-4 text-center">
-                        <i class="fas fa-mobile-alt display-4 pb-3"></i>
-                        <p class="main-text">+55 51 98491 5026</p>
-                    </div>
-                    <div class="col-12 col-sm-4 text-center">
-                        <i class="fas fa-envelope display-4 pb-3"></i>
-                        <p class="main-text">oaarruda@inf.ufrgs.br</p>
-                    </div>
+        <div class="container">
+            <h1 class="title text-center">Say hello!</h1>
+
+            <div class="row contact-list">
+                <div class="col-12 col-sm-4 text-center">
+                    <i class="fas fa-map-marked display-4 pb-3"></i>
+                    <p class="main-text">Porto Alegre, Brazil</p>
+                </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <i class="fas fa-mobile-alt display-4 pb-3"></i>
+                    <p class="main-text">+55 51 98491 5026</p>
+                </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <i class="fas fa-envelope display-4 pb-3"></i>
+                    <p class="main-text">oaarruda@inf.ufrgs.br</p>
                 </div>
             </div>
         </div>
