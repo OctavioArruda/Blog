@@ -64,6 +64,12 @@ html {
     min-height: 80vh;
 }
 
+#contact-me p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
 /* Responsive layout: */
 
 @media (max-width: 1200px){
