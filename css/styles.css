@@ -51,8 +51,8 @@ html {
 #about-me {
     background-color: #212529;
     color: white;
-    background-size: cover;
-    min-height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .about-me-title{
