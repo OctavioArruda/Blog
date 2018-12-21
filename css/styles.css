@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 .main-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -55,6 +59,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+#contact-me {
+    background-size: cover;
+    min-height: 80vh;
+}
+
 /* Responsive layout: */
 
 @media (max-width: 1200px){
@@ -72,5 +81,15 @@
 
     #about-me {
         padding: 0.2rem;
+    }
+
+    #about-me h1 {
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+
+    #about-me p {
+        font-weight: 100;
+        font-size: 1rem;
     }
 }
